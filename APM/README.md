@@ -6,6 +6,7 @@ Pluralsight Angular-GettingStarted course :
  https://www.pluralsight.com/courses/angular-2-getting-started-update
 
 Source Repo: https://github.com/DeborahK/Angular-GettingStarted
+AE Course Dev Repo: https://github.com/AndrewEastwell/Angular-GettingStarted
 
 ## Development server
 
