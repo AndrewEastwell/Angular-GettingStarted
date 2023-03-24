@@ -45,7 +45,15 @@
               <td>{{ product.productCode | lowercase | convertToSpaces:'-' }}</td>
               <td>{{ product.releaseDate }}</td>
               <td>{{ product.price  | currency : 'GBP':'symbol':'1.2-2'}}</td>
-              <td>{{ product.starRating }}</td>
+              <!-- <td>{{ product.starRating }}</td> 
+                Use nested star rating component, using it's defined selector 
+                - Pass in it's 'rating' input param
+                - Bind to it's output event 'ratingClicked' and handle in a local method, paiing the event 
+                  value emitted by the nested component 
+              -->
+              <td>
+                <pm-star [rating]='product.starRating' (ratingClicked)="onRatingClicked($event)"></pm-star>
+              </td>              
             </tr>            
           </tbody>
         </table>
